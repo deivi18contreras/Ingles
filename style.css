@@ -1,0 +1,85 @@
+/* 
+   FocusFlow Custom Styles 
+   Optimiza tu Potencial Académico
+*/
+
+/* Google Fonts & Material Symbols already linked via HTML */
+
+:root {
+    --material-symbols-fill: 0;
+    --material-symbols-wght: 400;
+    --material-symbols-grad: 0;
+    --material-symbols-opsz: 24;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 
+        'FILL' var(--material-symbols-fill), 
+        'wght' var(--material-symbols-wght), 
+        'GRAD' var(--material-symbols-grad), 
+        'opsz' var(--material-symbols-opsz);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Manrope', sans-serif; 
+}
+
+/* Custom Utilities or Specific Component Adjustments */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Transitions for Dark Mode */
+body, nav, section, div, h1, h2, h3, h4, p, span, button, footer {
+    transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Scroll Reveal Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Stagger delay helpers for grid items */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c6c5d4; /* outline-variant */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #767683; /* outline */
+}
