@@ -4,157 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FocusFlow | Healthy Online Habits for Students</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <!-- Ionicons for modern icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="antialiased">
+<body>
 
     <div class="mesh-gradient"></div>
 
-    <!-- Moment 2: Semantic Header & Navigation -->
-    <header class="glass-nav sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-indigo-200">
-                    <ion-icon name="flash" class="text-2xl"></ion-icon>
+    <header class="main-header">
+        <div class="nav-wrapper container">
+            <div class="logo-group">
+                <div class="logo-icon">
+                    <ion-icon name="flash" style="font-size: 1.5rem;"></ion-icon>
                 </div>
-                <span class="text-2xl font-black tracking-tighter text-slate-900">FocusFlow</span>
+                <span class="logo-text">FocusFlow</span>
             </div>
-            <nav class="hidden md:flex gap-8 font-medium text-slate-600">
-                <a href="#problem" class="hover:text-indigo-600 transition-colors">The Problem</a>
-                <a href="#solutions" class="hover:text-indigo-600 transition-colors">Solutions</a>
-                <a href="#logbook" class="hover:text-indigo-600 transition-colors">Logbook</a>
-                <a href="#contact" class="hover:text-indigo-600 transition-colors">Feedback</a>
+            <nav class="main-nav">
+                <a href="#problem" class="nav-link">The Problem</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#logbook" class="nav-link">Logbook</a>
+                <a href="#contact" class="nav-link">Feedback</a>
             </nav>
-            <a href="#contact" class="bg-indigo-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-slate-900 transition-all shadow-xl shadow-indigo-200">
+            <a href="#contact" class="btn-contact-nav">
                 Contact Teacher
             </a>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-12 space-y-32">
+    <main class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
 
         <!-- Hero Section -->
-        <section class="flex flex-col md:flex-row items-center gap-12 py-10 animate-fade-in">
-            <div class="flex-1 space-y-8">
-                <span class="inline-block px-4 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm font-bold tracking-wide uppercase">
+        <section class="hero-section animate-fade-in">
+            <div class="hero-content">
+                <span class="hero-badge">
                     Deliverable: Moment 3 - Final Result
                 </span>
-                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight">
+                <h1 class="hero-title">
                     Promoting <br/>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">Healthy Online Habits</span>
+                    <span class="hero-gradient-text">Healthy Online Habits</span>
                 </h1>
-                <p class="text-xl text-slate-500 max-w-xl leading-relaxed">
+                <p class="hero-description">
                     Strategies to mitigate the negative impact of social media on student concentration and academic productivity.
                 </p>
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#problem" class="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold hover:scale-105 transition-transform shadow-2xl shadow-indigo-200 text-center">
+                <div class="hero-actions">
+                    <a href="#problem" class="btn-primary">
                         View Analysis
                     </a>
-                    <a href="#contact" class="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-2xl font-bold hover:bg-slate-50 transition-colors text-center">
+                    <a href="#contact" class="btn-secondary">
                         Give Feedback
                     </a>
                 </div>
             </div>
-            <div class="flex-1 animate-fade-in delay-2">
-                <div class="relative">
-                    <div class="absolute -inset-4 bg-gradient-to-tr from-indigo-500 to-cyan-400 rounded-[2rem] blur-2xl opacity-20"></div>
-                    <img src="hero.png" alt="Healthy Online Habits" class="relative rounded-[2rem] shadow-2xl border border-white/50 w-full object-cover">
-                </div>
+            <div class="hero-image-wrapper animate-fade-in delay-2">
+                <div class="hero-image-glow"></div>
+                <img src="hero.png" alt="Healthy Online Habits" class="hero-img">
             </div>
         </section>
 
-        <!-- Problem Analysis (Moment 1 Content) -->
-        <section id="problem" class="space-y-16 scroll-mt-24">
-            <div class="text-center space-y-4 max-w-3xl mx-auto">
-                <h2 class="text-4xl font-bold text-slate-900">1. Problem Identification</h2>
-                <p class="text-slate-500 text-lg">"The excessive use of social media during classes interferes with concentration and mental well-being."</p>
+        <!-- Problem Analysis -->
+        <section id="problem" class="section-wrapper scroll-mt">
+            <div class="section-header-center">
+                <h2 class="section-title">1. Problem Identification</h2>
+                <p class="section-subtitle">"The excessive use of social media during classes interferes with concentration and mental well-being."</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <article class="glass-card p-10 rounded-[2.5rem] space-y-6">
-                    <h3 class="text-2xl font-bold text-indigo-600">The Context</h3>
-                    <p class="text-slate-600 leading-relaxed">
+            <div class="grid-2">
+                <article class="glass-card">
+                    <h3 class="card-title-accent">The Context</h3>
+                    <p class="card-text">
                         In Moment 1, we identified that primarily High School and University students are affected. The constant checking of notifications creates a state of chronic distraction that impacts the whole social ecosystem, including teachers and families.
                     </p>
-                    <div class="space-y-4 pt-4">
-                        <p class="font-bold flex items-center gap-2"><ion-icon name="people"></ion-icon> Who is Affected?</p>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-xl text-sm font-bold">Students</span>
-                            <span class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-xl text-sm font-bold">Educators</span>
-                            <span class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-xl text-sm font-bold">Families</span>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                            <ion-icon name="people"></ion-icon> Who is Affected?
+                        </p>
+                        <div class="tag-list">
+                            <span class="tag">Students</span>
+                            <span class="tag">Educators</span>
+                            <span class="tag">Families</span>
                         </div>
                     </div>
                 </article>
 
-                <article class="space-y-8">
-                    <h3 class="text-2xl font-bold">Why it Matters?</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4 p-6 glass-card rounded-2xl border-l-8 border-rose-500">
-                            <ion-icon name="trending-down" class="text-3xl text-rose-500"></ion-icon>
-                            <p class="text-slate-700 font-bold">Decreased Academic Performance</p>
-                        </div>
-                        <div class="flex items-center gap-4 p-6 glass-card rounded-2xl border-l-8 border-amber-500">
-                            <ion-icon name="timer-outline" class="text-3xl text-amber-500"></ion-icon>
-                            <p class="text-slate-700 font-bold">Increased Procrastination</p>
-                        </div>
-                        <div class="flex items-center gap-4 p-6 glass-card rounded-2xl border-l-8 border-cyan-500">
-                            <ion-icon name="bed-outline" class="text-3xl text-cyan-500"></ion-icon>
-                            <p class="text-slate-700 font-bold">Poor Sleep Quality & Anxiety</p>
-                        </div>
+                <article class="importance-list">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 2rem;">Why it Matters?</h3>
+                    <div class="importance-item rose">
+                        <ion-icon name="trending-down" class="importance-icon rose"></ion-icon>
+                        <p class="importance-text">Decreased Academic Performance</p>
+                    </div>
+                    <div class="importance-item amber">
+                        <ion-icon name="timer-outline" class="importance-icon amber"></ion-icon>
+                        <p class="importance-text">Increased Procrastination</p>
+                    </div>
+                    <div class="importance-item cyan">
+                        <ion-icon name="bed-outline" class="importance-icon cyan"></ion-icon>
+                        <p class="importance-text">Poor Sleep Quality & Anxiety</p>
                     </div>
                 </article>
             </div>
         </section>
 
         <!-- Solutions Section -->
-        <section id="solutions" class="space-y-12 scroll-mt-24">
-            <h2 class="text-3xl font-bold border-l-8 border-indigo-600 pl-6">2. Proposed Solutions</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-xl hover-glow">
-                    <h4 class="text-xl font-bold mb-3 text-indigo-600">Educational Campaigns</h4>
-                    <p class="text-slate-500 text-sm">Targeted awareness about digital well-being and the mechanics of social media addiction.</p>
+        <section id="solutions" class="section-wrapper scroll-mt">
+            <h2 class="section-title" style="border-left: 8px solid var(--primary); padding-left: 1.5rem;">2. Proposed Solutions</h2>
+            <div class="grid-3">
+                <article class="solution-card">
+                    <h4 class="solution-title">Educational Campaigns</h4>
+                    <p class="solution-desc">Targeted awareness about digital well-being and the mechanics of social media addiction.</p>
                 </article>
-                <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-xl hover-glow">
-                    <h4 class="text-xl font-bold mb-3 text-indigo-600">Screen Time Tools</h4>
-                    <p class="text-slate-500 text-sm">Implementation of technology to monitor and restrict screen time during peak study hours.</p>
+                <article class="solution-card">
+                    <h4 class="solution-title">Screen Time Tools</h4>
+                    <p class="solution-desc">Implementation of technology to monitor and restrict screen time during peak study hours.</p>
                 </article>
-                <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-xl hover-glow">
-                    <h4 class="text-xl font-bold mb-3 text-indigo-600">Structured Routines</h4>
-                    <p class="text-slate-500 text-sm">A phased approach to daily routines that prioritize 'Deep Focus' zones and device-free blocks.</p>
+                <article class="solution-card">
+                    <h4 class="solution-title">Structured Routines</h4>
+                    <p class="solution-desc">A phased approach to daily routines that prioritize 'Deep Focus' zones and device-free blocks.</p>
                 </article>
             </div>
         </section>
 
-        <!-- Contact/Feedback Form (Moment 3 Hard Requirement) -->
-        <section id="contact" class="glass-card p-12 rounded-[3.5rem] scroll-mt-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div class="space-y-8">
-                    <h2 class="text-4xl font-bold">Take Action</h2>
-                    <p class="text-slate-500 text-lg">Submit your feedback or join the digital habits initiative. Your input helps us refine these solutions for our community.</p>
-                    <div class="flex items-center gap-4 p-4 bg-indigo-50 rounded-2xl">
-                        <ion-icon name="mail" class="text-2xl text-indigo-600"></ion-icon>
-                        <span class="font-bold text-indigo-900">instructor@sena.edu.co</span>
+        <!-- Contact/Feedback Form -->
+        <section id="contact" class="glass-card contact-section scroll-mt">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Take Action</h2>
+                    <p class="section-subtitle">Submit your feedback or join the digital habits initiative. Your input helps us refine these solutions for our community.</p>
+                    <div class="contact-email-box">
+                        <ion-icon name="mail"></ion-icon>
+                        <span class="contact-email-text">instructor@sena.edu.co</span>
                     </div>
                 </div>
-                <!-- Moment 3: Functional Form with Accessability -->
-                <form class="space-y-4">
-                    <div class="space-y-2">
-                        <label class="text-xs font-bold uppercase text-slate-400">Full Name</label>
-                        <input type="text" placeholder="Your Name" required class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl focus:ring-2 focus:ring-indigo-600/20 outline-none">
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" placeholder="Your Name" required class="form-input">
                     </div>
-                    <div class="space-y-2">
-                        <label class="text-xs font-bold uppercase text-slate-400">Email Address</label>
-                        <input type="email" placeholder="email@sena.edu.co" required class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl focus:ring-2 focus:ring-indigo-600/20 outline-none">
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" placeholder="email@sena.edu.co" required class="form-input">
                     </div>
-                    <div class="space-y-2">
-                        <label class="text-xs font-bold uppercase text-slate-400">Message/Feedback</label>
-                        <textarea placeholder="How can we improve healthy habits?" rows="3" required class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl focus:ring-2 focus:ring-indigo-600/20 outline-none"></textarea>
+                    <div class="form-group">
+                        <label class="form-label">Message/Feedback</label>
+                        <textarea placeholder="How can we improve healthy habits?" rows="3" required class="form-textarea"></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-indigo-600 transition-colors shadow-xl">
+                    <button type="submit" class="btn-submit">
                         Send Message
                     </button>
                 </form>
@@ -162,36 +157,36 @@
         </section>
 
         <!-- Logbook Summary Section -->
-        <section id="logbook" class="space-y-12 scroll-mt-24">
-            <div class="flex items-center gap-4">
-                <div class="h-10 w-2 bg-indigo-600 rounded-full"></div>
-                <h2 class="text-3xl font-bold">Deliverable Moments & Logbook</h2>
+        <section id="logbook" class="section-wrapper scroll-mt">
+            <div class="logbook-header">
+                <div class="accent-bar"></div>
+                <h2 class="section-title" style="margin-bottom: 0;">Deliverable Moments & Logbook</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 glass-card border-indigo-100 border-2 rounded-[2rem] space-y-4">
-                    <h5 class="font-black text-indigo-600">Moment 1</h5>
-                    <p class="text-xs text-slate-400 uppercase font-bold tracking-tighter">Exploration</p>
-                    <p class="text-slate-600 text-sm">Problem selection focused on social media addiction. Brainstormed three initial solutions: Education, Tools, and Routines.</p>
+            <div class="grid-3">
+                <div class="logbook-card glass-card featured">
+                    <h5 class="logbook-moment">Moment 1</h5>
+                    <p class="logbook-phase">Exploration</p>
+                    <p class="card-text" style="font-size: 0.875rem;">Problem selection focused on social media addiction. Brainstormed three initial solutions: Education, Tools, and Routines.</p>
                 </div>
-                <div class="p-8 glass-card rounded-[2rem] border border-slate-100 space-y-4">
-                    <h5 class="font-black text-slate-900">Moment 2</h5>
-                    <p class="text-xs text-slate-400 uppercase font-bold tracking-tighter">Prototype</p>
-                    <p class="text-slate-600 text-sm">Development of semantic HTML structure using tags like section and article. Implementation of responsive Flexbox layout.</p>
+                <div class="logbook-card glass-card">
+                    <h5 class="logbook-moment">Moment 2</h5>
+                    <p class="logbook-phase">Prototype</p>
+                    <p class="card-text" style="font-size: 0.875rem;">Development of semantic HTML structure using tags like section and article. Implementation of responsive Flexbox layout.</p>
                 </div>
-                <div class="p-8 glass-card rounded-[2rem] border border-slate-100 space-y-4">
-                    <h5 class="font-black text-slate-900">Moment 3</h5>
-                    <p class="text-xs text-slate-400 uppercase font-bold tracking-tighter">Final Delivery</p>
-                    <p class="text-slate-600 text-sm">Full implementation of responsive design, contact forms, and final visual refinements for Profe Helmer.</p>
+                <div class="logbook-card glass-card">
+                    <h5 class="logbook-moment">Moment 3</h5>
+                    <p class="logbook-phase">Final Delivery</p>
+                    <p class="card-text" style="font-size: 0.875rem;">Full implementation of responsive design, contact forms, and final visual refinements for Profe Helmer.</p>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-white border-t border-slate-100 py-16 px-6 mt-10">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <p class="text-slate-400 text-sm">© SENA 2026 | English Department - Moment 3 Final Project</p>
-            <div class="flex gap-6 text-xl text-slate-400">
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="footer-copy">© SENA 2026 | English Department - Moment 3 Final Project</p>
+            <div class="footer-social">
                 <ion-icon name="logo-instagram"></ion-icon>
                 <ion-icon name="logo-linkedin"></ion-icon>
             </div>
